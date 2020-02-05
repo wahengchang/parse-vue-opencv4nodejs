@@ -114,6 +114,13 @@ const routes = [
 ]
 ```
 
+## Heroku Setup
+```
+$ heroku buildpacks:set starkast/cmake -a your-heroku-project
+$ heroku buildpacks:add --index=1 https://github.com/onboardiq/heroku16-buildpack-opencv3.git -a your-heroku-project
+
+$ heroku buildpacks:add --index=2 https://github.com/onboardiq/heroku-buildpack-go.git -a your-heroku-project
+```
 
 
 ### Customize configuration
